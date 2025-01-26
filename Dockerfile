@@ -18,7 +18,7 @@ COPY --from=python-provider /usr/local/include/python3.13 /usr/local/include/
 ENV PYTHON=/usr/local/bin/python3
 RUN which python3 && python3 --version
 
-COPY package*.json bun.lockb ./
+COPY package*.json bunfig.toml bun.lockb ./
 
 RUN export PYTHON=$(which python3) && export PATH=$PATH:/usr/local/bin && export npm_config_python=/usr/local/bin/python3.13 && bun i --ignore-scripts
 
