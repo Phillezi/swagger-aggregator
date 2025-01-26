@@ -1,4 +1,4 @@
-# React swagger UI with nginx
+# Swagger aggregator
 
 ## Overview
 
